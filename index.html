@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    
-    <label id="countLabel">0</label><br/>
-    <div id="count">
-     <button id="decreaseBtn">decrease</button>
-    <button id="resetBtn">reset</button>
-    <button id="increaseBtn">increase</button>
-</div>
-<script src="./script.js"></script>
+
+    <h2>Click Counter</h2>
+    <p>Click counter online. Click '+' button or press space to count.</p>
+
+    <div class="box">
+        <div class="input-area">
+            <input type="number" id="count" value="0">
+            <button id="clear">×</button>
+        </div>
+
+        <button class="btn plus" id="plus">+</button>
+        <button class="btn minus" id="minus">-</button>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
