@@ -1,26 +1,21 @@
-let count=0;
-document.getElementById("decreaseBtn").onclick=function (){
-    
-    if(count==0){
-        count=0
-        document.getElementById("countLabel").innerHTML=count;
+const count = document.getElementById("count");
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const clear = document.getElementById("clear");
 
-    }else{
-        count-=1
-        sdocument.getElementById("countLabel").innerHTML=count;
+plus.onclick = () => count.value = Number(count.value) + 1;
+minus.onclick = () => count.value = Number(count.value) - 1;
+clear.onclick = () => count.value = 0;
+
+// Keyboard support
+document.body.onkeydown = (e) => {
+    if (e.code === "Space") {
+        count.value = Number(count.value) + 1;
     }
-    
-}
-
-document.getElementById("resetBtn").onclick=function (){
-    count=0;
-    document.getElementById("countLabel").innerHTML=count;
-}
-document.getElementById("increaseBtn").onclick=function (){
-    count+=1;
-    document.getElementById("countLabel").innerHTML=count;
-}
-document.getElementById("decreaseBtn").onclick=function (){
-    count-=1;
-    document.getElementById("countLabel").innerHTML=count;
-}
+    if (e.code === "ArrowUp") {
+        count.value = Number(count.value) + 1;
+    }
+    if (e.code === "ArrowDown") {
+        count.value = Number(count.value) - 1;
+    }
+};
