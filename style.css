@@ -1,28 +1,56 @@
-#countLabel{
-    display: block;
-    font-size: 50px;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    background: #f2f2f2;
+    padding: 20px;
 }
-#increaseBtn{
-    font-size: 30px;
-    border: 2px solid #000;
-    
-    
+
+.box {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+    background: #f6efd3;
+    padding: 20px;
+    border-radius: 10px;
 }
-#resetBtn{
-    font-size: 30px;
-    border: 2px solid #000;
-    
-}
-#decreaseBtn{
-    font-size: 30px;
-    border: 2px solid #000;
-    
-}
-#count{
+
+.input-area {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    font-size: 30px;
     padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#clear {
+    margin-left: 10px;
+    font-size: 24px;
+    padding: 5px 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 26px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.plus {
+    background: #2eb82e;
+    color: white;
+}
+
+.minus {
+    background: #6e6e6e;
+    color: white;
 }
 
